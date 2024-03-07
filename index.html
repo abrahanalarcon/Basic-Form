@@ -1,0 +1,68 @@
+<form id="survey-form" >
+    <div class="form-group"> 
+      <label id="name-label" for="name">Name:</label>
+    <input
+       type="text"
+       name="name"
+       id="name" 
+       placeholder="Enter your name"
+       class="input-field"
+       required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email:</label>
+      <input
+        id="email"
+        name="email"
+        type="email" 
+        placeholder="Enter your email"
+        class="input-field"
+        required/>
+    </div>
+    <div class="form-group">
+      <label id="number-label"for="number">Age:</label>
+      <input 
+        id="number" 
+        name="number"
+        type="number" 
+        placeholder="0" 
+        min="0"
+        max="102"
+        class="input-field"/>
+    <div>
+      <div class="form-group">
+         <label for="dropdown">Desired position:</label>
+  <select id="dropdown" placeholder="klk" class="input-field">
+    <option disabled selected value>Select an option</option>
+    <option value="Junior Developer">Junior Developer</option>
+    <option value="Mid Developer">Mid Developer</option>
+    <option value="Senior Developer">Senior Developer</option>
+  </select>
+      </div>
+ 
+      <div class="form-group">
+        <p>Which work scheduale works best for you?</p>
+<label><input type="radio" name="work-schedule" value="full-time">Full time (M to F)</input></label>
+<label><input type="radio" name="work-schedule" value="part-time">Part time (M to W or W to F)</input></label>
+        
+      </div>
+
+
+    <div class="form-group">
+        <p>What technologies would you like to be working on?</p>
+<input name="technologies" type="checkbox" value="react">React</input>
+<input name="technologies" type="checkbox" value="angular">Angular</input>
+<input name="technologies" type="checkbox" value="bootstrap">Bootstrap</input>
+<input name="technologies" type="checkbox" value="php">Php</input>      
+    </div>
+
+<div class="form-group">
+    <p>Any aditional comments?</p>
+<textarea></textarea>
+  
+</div>
+
+<button id="submit-button" type="submit">Send</button>
+
+  </form>
